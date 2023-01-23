@@ -33,3 +33,5 @@ THEN I am presented with a responsive layout that adapts to my viewport
 # Technologies used
 HTML
 CSS
+# Link to deployed application
+https://jloya900.github.io/Joaquin-Loya-Portfolio/#about-me
