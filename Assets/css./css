@@ -1,0 +1,129 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header nav {
+  display: flex;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav ul li {
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  color: #ccc;
+}
+
+/* Section styles */
+section {
+  margin: 50px 0;
+}
+
+section .section-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+section .step-info {
+  display: flex;
+  align-items: center;
+}
+
+/* Border styles */
+.vl-border1 {
+  border-left: 2px solid #333;
+  height: 50%;
+  margin-right: 20px;
+}
+
+.vl-border2 {
+  border-left: 2px solid #333;
+  height: 50%;
+  margin-right: 20px;
+}
+
+.vl-border3 {
+  border-left: 2px solid #333;
+  height: 50%;
+  margin-right: 20px;
+}
+
+/* Work section styles */
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.gallery__item {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery__item figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.gallery__item:hover figcaption {
+  opacity: 1;
+}
+
+/* Contact me section styles */
+.contact-info {
+  display: flex;
+}
+
+.contact-info li {
+  margin-right: 20px;
+}
+
+.contact-info li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.contact-info li a:hover {
+  color: #555;
+}
