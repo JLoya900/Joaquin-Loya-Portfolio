@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="path/to/styles.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Joaquin Loya - Portfolio</title>
 </head>
 <body>
+  <div id="particles-js"></div>
   <!-- Navigation section -->
   <nav>
     <ul>
@@ -15,42 +16,37 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
-
   <!-- About section -->
   <section id="about">
-    <h1>Joaquin Loya</h1>
-    <img src="path/to/avatar.jpg" alt="Joaquin Loya's Avatar">
-    <p>20-year-old Software Engineer</p>
+    <div class="container">
+      <h1>Joaquin Loya</h1>
+      <p>20-year-old Software Engineer</p>
+    </div>
   </section>
-
   <!-- Work section -->
   <section id="work">
-    <h2>My Work</h2>
-    <div>
-      <a href="https://diff30140556.github.io/Laguna-Beach-Project/">Laguna Beach Project</a>
-      <a href="https://secret-inlet-92567.herokuapp.com/">Secret Inlet</a>
-      <a href="https://fitnessforsixtyplus.herokuapp.com/">Fitness for Sixty Plus</a>
-    </div>
-    <div>
-      <a href="https://diff30140556.github.io/Laguna-Beach-Project/">
-        <img src="path/to/laguna-beach-project.png" alt="Laguna Beach Project">
-      </a>
-      <a href="https://secret-inlet-92567.herokuapp.com/">
-        <img src="path/to/secret-inlet.png" alt="Secret Inlet">
-      </a>
-      <a href="https://fitnessforsixtyplus.herokuapp.com/">
-        <img src="path/to/fitness-for-sixty-plus.png" alt="Fitness for Sixty Plus">
-      </a>
+    <div class="container">
+      <h2>My Work</h2>
+      <div>
+        <a href="https://diff30140556.github.io/Laguna-Beach-Project-/">Laguna Beach Project</a>
+        <a href="https://jloya900.github.io/Weather-Dashboard/">Weather Dashboard</a>
+        <a href="https://fitnessforsixtyplus.herokuapp.com/">Fitness for Sixty Plus</a>
+      </div>
     </div>
   </section>
-
   <!-- Contact section -->
   <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: Jloya7557@gmail.com</p>
-    <p>Phone: 323-558-3228</p>
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Email: Jloya7557@gmail.com</p>
+      <p>Phone: 323-558-3228</p>
+    </div>
   </section>
-
-
+  <script src="particles.js"></script>
+  <script>
+    particlesJS.load('particles-js', 'particles.json', function() {
+      console.log('Particle.js loaded');
+    });
+  </script>
 </body>
 </html>
